@@ -15,6 +15,25 @@ function App() {
       <button type="button" className="alert button">
         Delete
       </button>
+
+      <a class="button tiny" href="#">
+        So Tiny
+      </a>
+      <a class="button small" href="#">
+        So Small
+      </a>
+      <a class="button" href="#">
+        So Basic
+      </a>
+      <a class="button large" href="#">
+        So Large
+      </a>
+      <a class="button expanded" href="#">
+        Such Expand
+      </a>
+      <a class="button small expanded" href="#">
+        Wow, Small Expand
+      </a>
     </div>
   );
 }
