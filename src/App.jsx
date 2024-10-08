@@ -16,22 +16,22 @@ function App() {
         Delete
       </button>
 
-      <a class="button tiny" href="#">
+      <a className="button tiny" href="#">
         So Tiny
       </a>
-      <a class="button small" href="#">
+      <a className="button small" href="#">
         So Small
       </a>
-      <a class="button" href="#">
+      <a className="button" href="#">
         So Basic
       </a>
-      <a class="button large" href="#">
+      <a className="button large" href="#">
         So Large
       </a>
-      <a class="button expanded" href="#">
+      <a className="button expanded" href="#">
         Such Expand
       </a>
-      <a class="button small expanded" href="#">
+      <a className="button small expanded" href="#">
         Wow, Small Expand
       </a>
     </div>
