@@ -13,7 +13,7 @@ function App() {
 
       <button className="submit success button">Save</button>
       <button type="button" className="alert button">
-        Delete
+        Delete Vidarte jeje
       </button>
 
       <a class="button tiny" href="#">
