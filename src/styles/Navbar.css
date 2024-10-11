@@ -15,6 +15,8 @@ a {
 
 ul.menu {
   background-color: #fafafa;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .menu-text {
@@ -34,6 +36,7 @@ ul.menu {
   border-radius: 8px;
   padding-bottom: 15px;
 }
+
 .link-12:hover {
   transition: all 0.4s;
   transform: translateY(-10px);
@@ -43,4 +46,64 @@ ul.menu {
 img {
   width: 165px;
   margin-left: 30px;
+}
+
+.menu-left {
+  padding-top: 25px;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Cambiar el color de todas las barras del menú hamburguesa */
+  .menu-icon {
+    background-color: #80cee1;
+    height: 20px;
+  }
+
+  .title-bar {
+    background-color: #fafafa;
+  }
+
+  .title-bar-title {
+    padding-left: 15px;
+    padding-top: 3px;
+    color: #80cee1;
+    font-size: 25px;
+  }
+  .top-bar {
+    display: none;
+  }
+
+  .is-open .top-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centramos verticalmente */
+    align-items: center; /* Centramos horizontalmente */
+    height: 100vh; /* Ocupamos el 100% de la altura de la pantalla */
+    background-color: #fafafa;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  ul.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-12 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  img {
+    width: 200px;
+    margin: 0;
+  }
+
+  .menu-left {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
 }
