@@ -2,10 +2,16 @@ import React, { useEffect } from "react";
 import $ from "jquery";
 import "foundation-sites/dist/css/foundation.min.css";
 import "foundation-sites/dist/js/foundation.min.js";
+import "motion-ui/dist/motion-ui.min.css";
+import "motion-ui/dist/motion-ui.min.js";
+import "../styles/Header.css";
+import Helado from "../img/helado1.jpg";
+import Helado2 from "../img/helado2.jpg";
+import Helado3 from "../img/helado3.jpg";
+import Helado4 from "../img/helado4.jpg";
 
 const Header = () => {
   useEffect(() => {
-    // Inicializar Foundation solo cuando el componente se monte
     $(document).foundation();
   }, []);
 
@@ -16,6 +22,7 @@ const Header = () => {
         role="region"
         aria-label="Favorite Space Pictures"
         data-orbit
+        data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"
       >
         <div className="orbit-wrapper">
           <div className="orbit-controls">
@@ -29,45 +36,37 @@ const Header = () => {
           <ul className="orbit-container">
             <li className="is-active orbit-slide">
               <figure className="orbit-figure">
-                <img
-                  className="orbit-image"
-                  src="https://placehold.it/1200x600/999?text=Slide-1"
-                  alt="Slide 1"
-                />
+                <img className="orbit-image" src={Helado} alt="Space" />
                 <figcaption className="orbit-caption">
-                  Space, the final frontier.
+                  Un helado, una sonrisa instantánea.
+                </figcaption>
+              </figure>
+            </li>
+            <li className="orbit-slide">
+              <figure className="orbit-figure">
+                <img className="orbit-image" src={Helado2} alt="Space" />
+                <figcaption className="orbit-caption">
+                  La vida es más dulce con un helado en mano.
+                </figcaption>
+              </figure>
+            </li>
+            <li className="orbit-slide">
+              <figure className="orbit-figure">
+                <img className="orbit-image" src={Helado3} alt="Space" />
+                <figcaption className="orbit-caption">
+                  La combinación perfecta de sabor y frescura.
                 </figcaption>
               </figure>
             </li>
             <li className="orbit-slide">
               <figure className="orbit-figure">
                 <img
-                  className="orbit-image"
-                  src="https://placehold.it/1200x600/888?text=Slide-2"
-                  alt="Slide 2"
-                />
-                <figcaption className="orbit-caption">Let's Rocket!</figcaption>
-              </figure>
-            </li>
-            <li className="orbit-slide">
-              <figure className="orbit-figure">
-                <img
-                  className="orbit-image"
-                  src="https://placehold.it/1200x600/777?text=Slide-3"
-                  alt="Slide 3"
-                />
-                <figcaption className="orbit-caption">Encapsulating</figcaption>
-              </figure>
-            </li>
-            <li className="orbit-slide">
-              <figure className="orbit-figure">
-                <img
-                  className="orbit-image"
-                  src="https://placehold.it/1200x600/666?text=Slide-4"
-                  alt="Slide 4"
+                  className="orbit-image imagen4"
+                  src={Helado4}
+                  alt="Space"
                 />
                 <figcaption className="orbit-caption">
-                  Outta This World
+                  Sabores que derriten corazones.
                 </figcaption>
               </figure>
             </li>
