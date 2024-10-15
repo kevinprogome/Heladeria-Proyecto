@@ -1,0 +1,120 @@
+.relevantes-container {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .titulo-grande {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre las cartas */
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #000;
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .imagen-placeholder {
+    background-color: #ccc;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .letra-parrafo-1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Estilos adicionales según lo que mencionaste */
+  .ecommerce-product-slider .orbit-previous,
+  .ecommerce-product-slider .orbit-next {
+    color: #cacaca;
+  }
+  
+  .ecommerce-product-slider .orbit-bullets button {
+    height: 0.65rem;
+    width: 0.65rem;
+  }
+  
+  .ecommerce-product-slider .product-card-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Cambiado a Poppins */
+    font-size: 1rem; /* Ajustado tamaño de fuente */
+    font-weight: 600;
+    line-height: 1.45rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .ecommerce-product-slider .product-card-desc {
+    color: #8a8a8a;
+    text-align: center;
+    display: block;
+    font-family: 'Poppins', sans-serif; /* Cambiado a Poppins */
+    font-size: 0.85rem;
+  }
+  
+  .ecommerce-product-slider .product-card-price {
+    text-align: center;
+    color: #3e3e3e;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+  }
+  
+  .ecommerce-product-slider .product-card-sale {
+    color: #cacaca;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.85rem;
+    margin-left: 0.3rem;
+    text-decoration: line-through;
+  }
+  
+  .product-card-thumbnail {
+    display: flex; /* Cambiar a flex para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 200px; /* Establece una altura específica si es necesario */
+  }
+  
+  .product-card-thumbnail img {
+    max-width: 100%; /* Asegúrate de que la imagen no exceda el contenedor */
+    max-height: 100%; /* Asegúrate de que la imagen no exceda el contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 1024px) {
+    .card {
+      width: 45%; /* Ajustar el ancho de las tarjetas para pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Las tarjetas ocupan el 100% del ancho para pantallas pequeñas */
+    }
+  }
+  
