@@ -52,7 +52,7 @@ img {
   padding-top: 25px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   /* Cambiar el color de todas las barras del menú hamburguesa */
   .menu-icon {
     background-color: #80cee1;

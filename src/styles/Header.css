@@ -1,4 +1,11 @@
-.imagen4 {
+.orbit-image {
   width: 100%;
-  height: 1000px;
+  height: 1100px;
+}
+
+@media screen and (max-width: 768px) {
+  .orbit-image {
+    width: 100%;
+    height: 500px;
+  }
 }
