@@ -11,53 +11,52 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="marketing-site-footer grid-container full">
-      <div className="grid-x grid-margin-x">
-        {/* Primera columna */}
-        <div className="cell medium-6">
-          <h4 className="marketing-site-footer-name">Yeti Snowcone</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-            dolorem accusantium architecto id quidem, itaque nesciunt quam
-            ducimus atque.
-          </p>
+    <footer className="marketing-site-footer">
+      <div className="footer-container">
+        {/* Columna de Horario de Atención */}
+        <div className="footer-column">
+          <h5 className="marketing-site-footer-name">Horario de Atención</h5>
+          <p>Lunes a viernes: 9:30 am - 5:45 pm</p>
+          <p>Sábado: 10:00 am - 5:00 pm</p>
+          <p>Domingo y festivos: 11:00 am - 5:45 pm</p>
+        </div>
+
+        {/* Columna de Información de Contacto */}
+        <div className="footer-column">
+          <h5 className="marketing-site-footer-name">Información de Contacto</h5>
+          <div className="marketing-site-footer-block">
+            <i className="fa fa-phone" aria-hidden="true"></i>
+            <p>+57 3167924610</p>
+          </div>
+          <div className="marketing-site-footer-block">
+            <i className="fa fa-envelope" aria-hidden="true"></i>
+            <p>heladeria@gmail.com</p>
+          </div>
+          <div className="marketing-site-footer-block">
+            <i className="fa fa-map-marker" aria-hidden="true"></i>
+            <p>Calle 23 #23-23</p>
+          </div>
+        </div>
+
+        {/* Columna de Redes Sociales */}
+        <div className="footer-column">
           <ul className="menu marketing-site-footer-menu-social simple">
             <li>
               <a href="#">
-                <i className="fa fa-youtube-square" aria-hidden="true"></i>
+                <i className="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
             </li>
             <li>
               <a href="#">
-                <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
             <li>
               <a href="#">
-                <i className="fa fa-twitter-square" aria-hidden="true"></i>
+                <i className="fa fa-facebook" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
-        </div>
-        {/* Segunda columna */}
-        <div className="cell medium-6">
-          <h4 className="marketing-site-footer-title">Contact Info</h4>
-          <div className="marketing-site-footer-block">
-            <i className="fa fa-map-marker" aria-hidden="true"></i>
-            <p>
-              100 W Rincon
-              <br />
-              San Francisco, CA 94015
-            </p>
-          </div>
-          <div className="marketing-site-footer-block">
-            <i className="fa fa-phone" aria-hidden="true"></i>
-            <p>1 (800) 555-5555</p>
-          </div>
-          <div className="marketing-site-footer-block">
-            <i className="fa fa-envelope-o" aria-hidden="true"></i>
-            <p>yetirules@fakeemail.com</p>
-          </div>
         </div>
       </div>
     </footer>
