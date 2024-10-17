@@ -34,7 +34,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="menu-left">
-              <a className="link-12" href="#">
+              <a className="link-12" href="/">
                 INICIO
               </a>
             </li>
@@ -48,8 +48,8 @@ const Navbar = () => {
         <div className="top-bar-right">
           <ul className="dropdown menu" data-dropdown-menu>
             <li>
-              <a className="link-12" href="#">
-                PRODUCTO
+              <a className="link-12" href="/productos">
+                PRODUCTOS
               </a>
             </li>
             <li>
