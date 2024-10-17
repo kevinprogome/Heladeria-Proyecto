@@ -3,6 +3,13 @@ import "foundation-sites/dist/js/foundation.min.js";
 import { useEffect } from "react";
 import $ from "jquery";
 import '../styles/Relevantes.css';
+import Vainilla from "../img/helado_vainilla.jpeg";
+import Chocolate from "../img/helado_chocolate.jpeg"
+import Fresa from "../img/helado_fresa.jpeg"
+import Menta from "../img/helado_menta.jpeg"
+import Caramelo from "../img/helado_caramelo.jpeg"
+import Cafe from "../img/helado_cafe.jpeg"
+
 
 const Relevantes = () => {
   useEffect(() => {
@@ -16,7 +23,7 @@ const Relevantes = () => {
   
   return (
     <div className="relevantes-container">
-      <h1 className="titulo-grande">RELEVANTES</h1>
+      <h1 className="titulo-grande">Relevantes</h1>
       <div className="ecommerce-product-slider orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
         <ul className="orbit-container">
           <button className="orbit-previous"><span className="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
@@ -28,31 +35,31 @@ const Relevantes = () => {
               {/* Carta 1 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src="https://placehold.it/300x300" alt="Product 1"/></a>
+                  <a href="#"><img src={Vainilla} alt="Helado de Vainilla"/></a>
                 </div>
-                <h2 className="product-card-title"><a href="#">Product Name 1</a></h2>
-                <span className="product-card-desc">Product Description 1</span>
-                <span className="product-card-price">$9.99</span><span className="product-card-sale">$12.99</span>
+                <h2 className="product-card-title"><a href="#">Vainilla Clásica</a></h2>
+                <span className="product-card-desc">Helado cremoso de vainilla con auténtica vaina de vainilla, perfecto para quienes disfrutan de los sabores tradicionales.</span>
+                <span className="product-card-price">$6.500</span>
               </div>
 
               {/* Carta 2 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src="https://placehold.it/300x300" alt="Product 2"/></a>
+                  <a href="#"><img src={Chocolate} alt="Chocolate Oscuro"/></a>
                 </div>
-                <h2 className="product-card-title"><a href="#">Product Name 2</a></h2>
-                <span className="product-card-desc">Product Description 2</span>
-                <span className="product-card-price">$14.99</span><span className="product-card-sale">$19.99</span>
+                <h2 className="product-card-title"><a href="#">Chocolate Oscuro</a></h2>
+                <span className="product-card-desc">Helado de chocolate intenso y rico, hecho con cacao oscuro para un sabor profundo y decadente.</span>
+                <span className="product-card-price">$6.500</span>
               </div>
 
               {/* Carta 3 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src="https://placehold.it/300x300" alt="Product 3"/></a>
+                  <a href="#"><img src={Fresa} alt="Fresa Natural"/></a>
                 </div>
-                <h2 className="product-card-title"><a href="#">Product Name 3</a></h2>
-                <span className="product-card-desc">Product Description 3</span>
-                <span className="product-card-price">$29.99</span><span className="product-card-sale">$39.99</span>
+                <h2 className="product-card-title"><a href="#">Fresa Natural</a></h2>
+                <span className="product-card-desc">Helado refrescante hecho con fresas frescas, ideal para los amantes de los sabores frutales y naturales.</span>
+                <span className="product-card-price">$6.500</span>
               </div>
             </div>
           </li>
@@ -63,31 +70,30 @@ const Relevantes = () => {
               {/* Carta 4 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src="https://placehold.it/300x300" alt="Product 4"/></a>
+                  <a href="#"><img src={Menta} alt="Menta con Chips de Chocolate"/></a>
                 </div>
-                <h2 className="product-card-title"><a href="#">Product Name 4</a></h2>
-                <span className="product-card-desc">Product Description 4</span>
-                <span className="product-card-price">$19.99</span><span className="product-card-sale">$24.99</span>
-              </div>
+                <h2 className="product-card-title"><a href="#">Menta con Chips de Chocolate</a></h2>
+                <span className="product-card-desc">Helado de menta fresca con trozos de chocolate crujiente, una combinación clásica y refrescante.</span>
+                <span className="product-card-price">$8.500</span>              </div>
 
               {/* Carta 5 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src="https://placehold.it/300x300" alt="Product 5"/></a>
+                  <a href="#"><img src={Caramelo} alt="Caramelo Salado"/></a>
                 </div>
-                <h2 className="product-card-title"><a href="#">Product Name 5</a></h2>
-                <span className="product-card-desc">Product Description 5</span>
-                <span className="product-card-price">$24.99</span><span className="product-card-sale">$29.99</span>
+                <h2 className="product-card-title"><a href="#">Caramelo Salado</a></h2>
+                <span className="product-card-desc">Helado cremoso con un toque de caramelo salado, que combina lo dulce y lo salado en cada bocado.</span>
+                <span className="product-card-price">$8.500</span>
               </div>
 
               {/* Carta 6 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src="https://placehold.it/300x300" alt="Product 6"/></a>
+                  <a href="#"><img src={Cafe} alt="Café Espresso"/></a>
                 </div>
-                <h2 className="product-card-title"><a href="#">Product Name 6</a></h2>
-                <span className="product-card-desc">Product Description 6</span>
-                <span className="product-card-price">$34.99</span><span className="product-card-sale">$39.99</span>
+                <h2 className="product-card-title"><a href="#">Café Espresso</a></h2>
+                <span className="product-card-desc">Helado con un sabor intenso a café, perfecto para los amantes del café que buscan un postre energético y delicioso.</span>
+                <span className="product-card-price">$8.500</span>
               </div>
             </div>
           </li>
