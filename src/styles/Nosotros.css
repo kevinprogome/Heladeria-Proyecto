@@ -1,0 +1,88 @@
+.app-container {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.titulo-grande {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+
+.logo-container {
+  margin-top: -40px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Asegura que la imagen se recorte dentro del contenedor circular */
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: 100%; /* Ajusta la imagen a la altura del contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.mission-vision-container {
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+}
+
+.subtitulos {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.letra-parrafo-1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+      width: 150px;
+      height: 150px;
+  }
+
+  .mission-vision-container {
+      padding: 15px;
+  }
+
+  .subtitulos {
+      font-size: 1.5rem;
+  }
+
+  .letra-parrafo-1 {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+      width: 100px;
+      height: 100px;
+  }
+
+  .mission-vision-container {
+      padding: 10px;
+  }
+}

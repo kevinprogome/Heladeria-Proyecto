@@ -22,7 +22,9 @@ const Productos = () => {
   }, []);
   
   return (
+    
 <div className="grid-container">
+  <h1 className="titulo-grande">Productos</h1>
   <div className="grid-x grid-margin-x small-up-2 medium-up-3">
     <div className="cell product-card">
       <div className="product-card-thumbnail">

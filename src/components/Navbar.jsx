@@ -53,7 +53,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="link-12" href="#">
+              <a className="link-12" href="/nosotros">
                 NOSOTROS
               </a>
             </li>
