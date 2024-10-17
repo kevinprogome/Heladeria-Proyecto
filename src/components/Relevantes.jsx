@@ -2,19 +2,15 @@ import "foundation-sites/dist/css/foundation.min.css";
 import "foundation-sites/dist/js/foundation.min.js";
 import { useEffect } from "react";
 import $ from "jquery";
-import Foundation from "foundation-sites"; // Import Foundation directly
 import '../styles/Relevantes.css';
 
 const Relevantes = () => {
   useEffect(() => {
-    // Make sure jQuery is available globally for Foundation
     window.jQuery = $;
     window.$ = $;
     
-    // Add Foundation to jQuery
     Foundation.addToJquery($);
     
-    // Initialize Foundation after the component mounts
     $(document).foundation();
   }, []);
   
