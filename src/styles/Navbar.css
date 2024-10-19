@@ -2,7 +2,6 @@ a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #80cee1;
   font-size: 19px;
 }
 
@@ -24,7 +23,7 @@ ul.menu {
 }
 
 .link-12 {
-  color: #80cee1;
+  color: #fa52a0;
   font-size: 20px;
   text-decoration: none;
   padding: 10px 20px;
@@ -40,7 +39,7 @@ ul.menu {
 .link-12:hover {
   transition: all 0.4s;
   transform: translateY(-10px);
-  color: #b880ff;
+  color: #a180e1;
 }
 
 img {
@@ -55,7 +54,7 @@ img {
 @media only screen and (max-width: 1023px) {
   /* Cambiar el color de todas las barras del menú hamburguesa */
   .menu-icon {
-    background-color: #80cee1;
+    background-color: #fa52a0;
     height: 20px;
   }
 
@@ -66,7 +65,7 @@ img {
   .title-bar-title {
     padding-left: 15px;
     padding-top: 3px;
-    color: #80cee1;
+    color: #fa52a0;
     font-size: 25px;
   }
   .top-bar {

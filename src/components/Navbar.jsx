@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="top-bar-left">
           <ul className="dropdown menu" data-dropdown-menu>
             <li className="menu-text">
-              <a href="#">
+              <a href="/">
                 <img src={Logo} alt="Logo Heladería" />
               </a>
             </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="link-12" href="#">
+              <a className="link-12" href="/api">
                 API
               </a>
             </li>
