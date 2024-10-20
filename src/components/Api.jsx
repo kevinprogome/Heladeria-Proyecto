@@ -22,15 +22,6 @@ const Api = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-
-        <div>
-          <ins
-            className="adsbygoogle"
-            style={{ display: "inline-block", width: 360, height: 800 }}
-            data-ad-client="ca-pub-7276530423877891"
-            data-ad-slot="2240645442"
-          ></ins>
-        </div>
       </div>
     </div>
   );

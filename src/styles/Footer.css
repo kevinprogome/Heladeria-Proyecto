@@ -1,67 +1,83 @@
-.marketing-site-footer {
-  background: #0078C2;
-  color: #ffffff;
-  text-shadow: 2px 2px 1.7px black;
-  padding: 2rem 0 0;
-  width: 100%;
-}
-
-.footer-container {
-  max-width: 1200px; 
-  margin: 0 auto; 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.footer-column {
-  width: 30%; 
+.footer {
+  background-color: #ff6eb9;
+  color: rgb(255, 255, 255);
+  padding: 20px 0;
   text-align: center;
 }
 
-.marketing-site-footer-name {
-  color: #fefefe;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.marketing-site-footer-block {
+.footer-column {
+  width: 45%;
+  text-align: left;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 27px;
+}
+
+p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 23px;
+}
+.footer-column p {
+  font-size: 1rem;
+  margin: 5px 0;
+  padding-top: 10px;
+}
+
+.footer-contact {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin: 10px 0;
 }
 
-.marketing-site-footer-block .fa {
+.footer-contact p {
+  margin-left: 10px;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.social-icon {
   font-size: 1.5rem;
-  color: #ffffff;
-  margin-right: 1rem;
-}
-
-.marketing-site-footer-menu-social {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.marketing-site-footer-menu-social a {
-  color: #ffffff;
-  font-size: 2rem;
+  margin: 0 20px;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 768px) {
   .footer-container {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-column {
-    width: 100%; 
+    width: 100%;
     margin-bottom: 20px;
+    text-align: center;
   }
 
-  .marketing-site-footer-menu-social {
+  .footer-contact {
     justify-content: center;
+  }
+
+  .footer-contact p {
+    margin-left: 5px;
   }
 }
