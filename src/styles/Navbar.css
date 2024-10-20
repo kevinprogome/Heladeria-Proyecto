@@ -1,3 +1,42 @@
+/* Oculta el logo de Google que se muestra en el traductor */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  display: none !important;
+}
+
+/* Muestra solo el contenedor personalizado */
+.custom-google-translate-wrapper {
+  display: flex;
+  align-items: center;
+
+  border-radius: 5px;
+  cursor: pointer;
+  width: max-content;
+}
+
+/* Estilo para el ícono de Google Translate personalizado */
+.custom-google-translate-wrapper .material-symbols-outlined {
+  font-size: 20px;
+  color: #333;
+  margin-right: 5px;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none;
+}
+
+.VIpgJd-ZVi9od-ORHb {
+  display: none;
+  padding: 0;
+}
+
+.material-symbols-outlined {
+  font-size: 25px !important; /* Cambia este valor según el tamaño que desees */
+  line-height: 1; /* Ajusta el espacio vertical si es necesario */
+}
 a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -23,7 +62,7 @@ ul.menu {
 }
 
 .link-12 {
-  color: #fa52a0;
+  color: #fa52a0 !important;
   font-size: 20px;
   text-decoration: none;
   padding: 10px 20px;
@@ -39,7 +78,7 @@ ul.menu {
 .link-12:hover {
   transition: all 0.4s;
   transform: translateY(-10px);
-  color: #a180e1;
+  color: #a180e1 !important;
 }
 
 img {

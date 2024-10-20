@@ -5,8 +5,8 @@ import "foundation-sites/dist/js/foundation.min.js";
 import "motion-ui/dist/motion-ui.min.css";
 import "motion-ui/dist/motion-ui.min.js";
 import "../styles/Header.css";
-import Helado from "../img/helado1.png";
-import Helado2 from "../img/helado2.png";
+import Helado from "../img/helado1.jpg";
+import Helado2 from "../img/helado2.jpeg";
 import Helado3 from "../img/helado3.jpg";
 import Helado4 from "../img/helado4.jpg";
 

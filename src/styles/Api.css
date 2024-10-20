@@ -1,4 +1,53 @@
-#map {
-  height: 500px;
+h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.Container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-image: url("../img/background-helado.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* Cambia este valor para ajustar la opacidad */
+  z-index: -1;
+}
+/* Estilo del iframe del mapa */
+.styled-map {
+  width: 100%;
+  max-width: 900px; /* Limita el tamaño máximo para pantallas grandes */
+  height: 500px;
+  border: none;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #000; /* Borde del mapa */
+}
+
+/* Efecto hover */
+.styled-map:hover {
+  transform: scale(1.02); /* Ligeramente agranda el mapa al pasar el cursor */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Aumenta la sombra en el hover */
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .styled-map {
+    height: 350px;
+  }
 }

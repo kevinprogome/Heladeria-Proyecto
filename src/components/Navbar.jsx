@@ -8,8 +8,26 @@ import { useEffect } from "react";
 const Navbar = () => {
   useEffect(() => {
     $(document).foundation();
-  }, []);
+    if (!window.googleTranslateScriptAdded) {
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src =
+        "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.body.appendChild(script);
+      window.googleTranslateScriptAdded = true;
+    }
 
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "es",
+          includedLanguages: "es,en,pt,fr",
+          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        "google_translate_element"
+      );
+    };
+  }, []);
   return (
     <div>
       <div
@@ -38,11 +56,24 @@ const Navbar = () => {
                 INICIO
               </a>
             </li>
-            <li className="menu-left">
-              <a className="link-12" href="#">
-                <span className="material-symbols-outlined">g_translate</span>
-              </a>
-            </li>
+            <div className="menu-left">
+              <div
+                id="google_translate_element"
+                className=" custom-google-translate-wrapper"
+                onClick={() => {
+                  const translateFrame = document.querySelector(
+                    ".goog-te-gadget-simple"
+                  );
+                  if (translateFrame) {
+                    translateFrame.click();
+                  }
+                }}
+              >
+                <span className="link-12 material-symbols-outlined">
+                  g_translate
+                </span>
+              </div>
+            </div>
           </ul>
         </div>
         <div className="top-bar-right">
