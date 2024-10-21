@@ -1,3 +1,36 @@
+/* Oculta el icono temporal del traductor de Google */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+/* Oculta el frame del traductor */
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Si el widget de traducción genera algún espacio en blanco, lo eliminas */
+.goog-te-gadget {
+  display: none !important;
+}
+
+/* Ocultar la barra completa que aparece en la parte superior */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Asegurarse de que el layout no sea afectado */
+.goog-te-banner-frame {
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
 /* Oculta el logo de Google que se muestra en el traductor */
 .goog-logo-link {
   display: none !important;
@@ -11,7 +44,6 @@
 .custom-google-translate-wrapper {
   display: flex;
   align-items: center;
-
   border-radius: 5px;
   cursor: pointer;
   width: max-content;
@@ -24,19 +56,23 @@
   margin-right: 5px;
 }
 
+/* Ocultar el widget de Google que aparece */
 .VIpgJd-ZVi9od-ORHb-OEVmcd {
-  display: none;
+  display: none !important;
 }
 
 .VIpgJd-ZVi9od-ORHb {
-  display: none;
-  padding: 0;
+  display: none !important;
+  padding: 0 !important;
 }
 
+/* Asegúrate de que el ícono tenga el tamaño adecuado */
 .material-symbols-outlined {
   font-size: 25px !important; /* Cambia este valor según el tamaño que desees */
   line-height: 1; /* Ajusta el espacio vertical si es necesario */
 }
+
+/* Enlaces */
 a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -44,6 +80,7 @@ a {
   font-size: 19px;
 }
 
+/* Barra superior (navbar) */
 .top-bar {
   background-color: #fafafa;
   padding: 10px 0;
@@ -61,6 +98,7 @@ ul.menu {
   background-color: #fafafa;
 }
 
+/* Estilo para los enlaces del menú */
 .link-12 {
   color: #fa52a0 !important;
   font-size: 20px;
@@ -75,6 +113,7 @@ ul.menu {
   padding-bottom: 15px;
 }
 
+/* Hover efecto en los enlaces */
 .link-12:hover {
   transition: all 0.4s;
   transform: translateY(-10px);
@@ -90,6 +129,7 @@ img {
   padding-top: 25px;
 }
 
+/* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 1023px) {
   /* Cambiar el color de todas las barras del menú hamburguesa */
   .menu-icon {
@@ -107,6 +147,7 @@ img {
     color: #fa52a0;
     font-size: 25px;
   }
+
   .top-bar {
     display: none;
   }

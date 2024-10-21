@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import "foundation-sites/dist/css/foundation.min.css";
 import "foundation-sites/dist/js/foundation.min.js";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -8,13 +9,30 @@ import Relevantes from "./components/Relevantes.jsx";
 import Productos from "./components/Productos.jsx";
 import Nosotros from "./components/Nosotros.jsx";
 import Api from "./components/Api.jsx";
+import LoadingScreen from "./components/LoadingScreen.jsx"; // Importar la pantalla de carga
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true); // Estado para la pantalla de carga
+
+  useEffect(() => {
+    // Simula un tiempo de carga o la carga de datos reales
+    const timer = setTimeout(() => {
+      setIsLoading(false); // Desactiva la pantalla de carga después de 2 segundos (ajustable)
+    }, 1500);
+
+    return () => clearTimeout(timer); // Limpia el temporizador
+  }, []);
+
+  if (isLoading) {
+    // Si isLoading es verdadero, mostramos la pantalla de carga
+    return <LoadingScreen />;
+  }
+
+  // Si isLoading es falso, cargamos la aplicación normal
   return (
     <div>
       <BrowserRouter>
         <Navbar />
-
         <Routes>
           <Route
             path="/"
@@ -27,9 +45,8 @@ function App() {
           />
           <Route path="/productos" element={<Productos />} />
           <Route path="/nosotros" element={<Nosotros />} />
-          <Route path="/api" element={<Api />}></Route>
+          <Route path="/api" element={<Api />} />
         </Routes>
-
         <Footer />
       </BrowserRouter>
     </div>
