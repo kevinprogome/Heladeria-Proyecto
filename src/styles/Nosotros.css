@@ -16,7 +16,11 @@
   margin-bottom: 20px;
 }
 
+.product-card-title{
+  font-family: "Poppins", sans-serif;
+  color: black !important;
 
+}
 .logo-container {
   margin-top: -40px;
   border-radius: 50%;

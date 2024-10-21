@@ -4,12 +4,11 @@ import { useEffect } from "react";
 import $ from "jquery";
 import '../styles/Relevantes.css';
 import Vainilla from "../img/helado_vainilla.jpeg";
-import Chocolate from "../img/helado_chocolate.jpeg"
-import Fresa from "../img/helado_fresa.jpeg"
-import Menta from "../img/helado_menta.jpeg"
-import Caramelo from "../img/helado_caramelo.jpeg"
-import Cafe from "../img/helado_cafe.jpeg"
-
+import Chocolate from "../img/helado_chocolate.jpeg";
+import Fresa from "../img/helado_fresa.jpeg";
+import Menta from "../img/helado_menta.jpeg";
+import Caramelo from "../img/helado_caramelo.jpeg";
+import Cafe from "../img/helado_cafe.jpeg";
 
 const Relevantes = () => {
   useEffect(() => {
@@ -35,19 +34,19 @@ const Relevantes = () => {
               {/* Carta 1 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src={Vainilla} alt="Helado de Vainilla"/></a>
+                  <img src={Vainilla} alt="Helado de Vainilla"/>
                 </div>
-                <h2 className="product-card-title"><a href="#">Vainilla Clásica</a></h2>
-                <span className="product-card-desc">Helado cremoso de vainilla con auténtica vaina de vainilla, perfecto para quienes disfrutan de los sabores tradicionales.</span>
+                <h2 className="product-card-title">Vainilla Clásica</h2>
+                <span className="product-card-desc">Helado cremoso de vainilla con auténtica vaina de vainilla, perfecto para quienes disfrutan de los sabores.</span>
                 <span className="product-card-price">$6.500</span>
               </div>
 
               {/* Carta 2 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src={Chocolate} alt="Chocolate Oscuro"/></a>
+                  <img src={Chocolate} alt="Chocolate Oscuro"/>
                 </div>
-                <h2 className="product-card-title"><a href="#">Chocolate Oscuro</a></h2>
+                <h2 className="product-card-title">Chocolate Oscuro</h2>
                 <span className="product-card-desc">Helado de chocolate intenso y rico, hecho con cacao oscuro para un sabor profundo y decadente.</span>
                 <span className="product-card-price">$6.500</span>
               </div>
@@ -55,9 +54,9 @@ const Relevantes = () => {
               {/* Carta 3 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src={Fresa} alt="Fresa Natural"/></a>
+                  <img src={Fresa} alt="Fresa Natural"/>
                 </div>
-                <h2 className="product-card-title"><a href="#">Fresa Natural</a></h2>
+                <h2 className="product-card-title">Fresa Natural</h2>
                 <span className="product-card-desc">Helado refrescante hecho con fresas frescas, ideal para los amantes de los sabores frutales y naturales.</span>
                 <span className="product-card-price">$6.500</span>
               </div>
@@ -70,18 +69,19 @@ const Relevantes = () => {
               {/* Carta 4 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src={Menta} alt="Menta con Chips de Chocolate"/></a>
+                  <img src={Menta} alt="Menta con Chips de Chocolate"/>
                 </div>
-                <h2 className="product-card-title"><a href="#">Menta con Chips de Chocolate</a></h2>
+                <h2 className="product-card-title">Menta con Chips de Chocolate</h2>
                 <span className="product-card-desc">Helado de menta fresca con trozos de chocolate crujiente, una combinación clásica y refrescante.</span>
-                <span className="product-card-price">$8.500</span>              </div>
+                <span className="product-card-price">$8.500</span>
+              </div>
 
               {/* Carta 5 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src={Caramelo} alt="Caramelo Salado"/></a>
+                  <img src={Caramelo} alt="Caramelo Salado"/>
                 </div>
-                <h2 className="product-card-title"><a href="#">Caramelo Salado</a></h2>
+                <h2 className="product-card-title">Caramelo Salado</h2>
                 <span className="product-card-desc">Helado cremoso con un toque de caramelo salado, que combina lo dulce y lo salado en cada bocado.</span>
                 <span className="product-card-price">$8.500</span>
               </div>
@@ -89,10 +89,10 @@ const Relevantes = () => {
               {/* Carta 6 */}
               <div className="card">
                 <div className="product-card-thumbnail">
-                  <a href="#"><img src={Cafe} alt="Café Espresso"/></a>
+                  <img src={Cafe} alt="Café Espresso"/>
                 </div>
-                <h2 className="product-card-title"><a href="#">Café Espresso</a></h2>
-                <span className="product-card-desc">Helado con un sabor intenso a café, perfecto para los amantes del café que buscan un postre energético y delicioso.</span>
+                <h2 className="product-card-title">Café Espresso</h2>
+                <span className="product-card-desc">Helado con un sabor intenso a café, perfecto para los amantes del café que buscan un postre energético.</span>
                 <span className="product-card-price">$8.500</span>
               </div>
             </div>
