@@ -6,29 +6,31 @@ import Headers from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Relevantes from "./components/Relevantes.jsx";
 import Productos from "./components/Productos.jsx";
-import Nosotros from "./components/Nosotros.jsx"
+import Nosotros from "./components/Nosotros.jsx";
+import Api from "./components/Api.jsx";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
 
-      <Routes>
-  <Route
-    path="/"
-    element={
-      <>
-        <Headers />
-        <Relevantes />
-      </>
-    }
-  />
-  <Route path="/productos" element={<Productos />} />
-  <Route path="/nosotros" element={<Nosotros/>} />
-</Routes>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Headers />
+                <Relevantes />
+              </>
+            }
+          />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/api" element={<Api />}></Route>
+        </Routes>
 
-      <Footer />
+        <Footer />
       </BrowserRouter>
     </div>
   );
