@@ -8,6 +8,8 @@ import { useEffect } from "react";
 const Navbar = () => {
   useEffect(() => {
     $(document).foundation();
+
+    // Añadir el script de Google Translate si no está ya añadido
     if (!window.googleTranslateScriptAdded) {
       const script = document.createElement("script");
       script.type = "text/javascript";
@@ -17,6 +19,7 @@ const Navbar = () => {
       window.googleTranslateScriptAdded = true;
     }
 
+    // Inicializar Google Translate
     window.googleTranslateElementInit = () => {
       new window.google.translate.TranslateElement(
         {
@@ -27,7 +30,35 @@ const Navbar = () => {
         "google_translate_element"
       );
     };
+
+    // Función para reemplazar el texto "G_Traducir" por el icono
+    const replaceGTranslateTextWithIcon = () => {
+      const translateFonts = document.querySelectorAll("font");
+
+      translateFonts.forEach((font) => {
+        if (font.textContent.includes("g_traducir")) {
+          font.innerHTML =
+            '<span class="material-symbols-outlined" style="color: #fa52a0 !important; ">g_translate</span>';
+        }
+      });
+    };
+
+    // Observador de mutaciones para detectar cambios en el DOM generados por el traductor
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach(() => {
+        replaceGTranslateTextWithIcon(); // Reemplaza cada vez que hay un cambio
+      });
+    });
+
+    // Monitorea el documento completo para detectar cambios
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Cleanup para detener el observador cuando el componente se desmonte
+    return () => {
+      observer.disconnect();
+    };
   }, []);
+
   return (
     <div>
       <div
@@ -59,7 +90,7 @@ const Navbar = () => {
             <div className="menu-left">
               <div
                 id="google_translate_element"
-                className=" custom-google-translate-wrapper"
+                className="custom-google-translate-wrapper"
                 onClick={() => {
                   const translateFrame = document.querySelector(
                     ".goog-te-gadget-simple"
