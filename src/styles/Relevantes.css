@@ -130,7 +130,7 @@
 .orbit-previous:hover {
   color: #ff6eb9 !important;
   cursor: pointer;
-  background-color: rgba(240, 240, 240, 0.6);
+  background-color: rgba(240, 240, 240, 0.2);
 }
 
 .orbit-next:focus,

@@ -25,37 +25,21 @@ const Header = () => {
         data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"
       >
         <div className="orbit-wrapper">
-          <div className="orbit-controls">
-            <button className="orbit-previous ">
-              <span className="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
-            </button>
-            <button className="orbit-next ">
-              <span className="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
-            </button>
-          </div>
+          <div className="orbit-controls"></div>
           <ul className="orbit-container">
             <li className="is-active orbit-slide">
               <figure className="orbit-figure">
                 <img className="orbit-image" src={Helado} alt="Space" />
-                <figcaption className="orbit-caption">
-                  Un helado, una sonrisa instantánea.
-                </figcaption>
               </figure>
             </li>
             <li className="orbit-slide">
               <figure className="orbit-figure">
                 <img className="orbit-image" src={Helado2} alt="Space" />
-                <figcaption className="orbit-caption">
-                  La vida es más dulce con un helado en mano.
-                </figcaption>
               </figure>
             </li>
             <li className="orbit-slide">
               <figure className="orbit-figure">
                 <img className="orbit-image" src={Helado3} alt="Space" />
-                <figcaption className="orbit-caption">
-                  La combinación perfecta de sabor y frescura.
-                </figcaption>
               </figure>
             </li>
             <li className="orbit-slide">
@@ -65,9 +49,6 @@ const Header = () => {
                   src={Helado4}
                   alt="Space"
                 />
-                <figcaption className="orbit-caption">
-                  Sabores que derriten corazones.
-                </figcaption>
               </figure>
             </li>
           </ul>

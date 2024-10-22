@@ -1,9 +1,20 @@
-h1 {
+.titulo-api {
+  color: #fa52a0; /* Color base del texto */
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  font-style: normal;
-  font-size: 70px;
+  font-size: 4.5vw; /* Tamaño dinámico basado en el ancho de la pantalla */
+  letter-spacing: 1.5px; /* Espaciado elegante entre letras */
+  text-transform: uppercase; /* Todo el texto en mayúsculas para un estilo más formal */
+  -webkit-text-stroke: 2px #fff; /* Borde fino del texto para dar un toque moderno */
+  background: linear-gradient(
+    135deg,
+    #fa52a0 0%,
+    #ff96c8 100%
+  ); /* Degradado suave */
+  -webkit-text-fill-color: transparent; /* Relleno del texto con el degradado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Sombra sutil para darle profundidad */
+  margin-top: 20px; /* Espaciado superior para dar aire al título */
 }
 
 .Container {
