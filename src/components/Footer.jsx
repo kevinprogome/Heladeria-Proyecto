@@ -14,15 +14,31 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Horario de atención */}
+        {/* Primera columna: Logo */}
+        <div className="footer-column footer-logo">
+          <img src="https://i.ibb.co/YLhsHJn/DOLCE-NEVADE.png" alt="Heladería Logo" className="logo-image" />
+          <div className="footer-social">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="social-icon" />
+              </a>
+              <a href="https://www.instagram.com/uscooficial/?hl=es" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="social-icon" />
+              </a>
+              <a href="https://web.facebook.com/USCOoficial" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="social-icon" />
+              </a>
+          </div>
+        </div>
+
+        {/* Segunda columna: Horario de atención */}
         <div className="footer-column">
           <h5>Horario de Atención</h5>
           <p>Lunes a viernes: 9:30 am a 5:45 pm</p>
           <p>Sábado: 10 am a 5 pm</p>
           <p>Domingo y festivos: 11 am a 5:45 pm</p>
         </div>
-        
-        {/* Información de contacto */}
+
+        {/* Tercera columna: Información de contacto */}
         <div className="footer-column">
           <h5>Información de Contacto</h5>
           <div className="footer-contact">
@@ -34,12 +50,19 @@ const Footer = () => {
           <div className="footer-contact">
             <FaMapMarkerAlt /> <p>Calle 23 #23-23</p>
           </div>
-          {/* Redes Sociales */}
-          <div className="footer-social">
-            <FaWhatsapp className="social-icon" />
-            <FaInstagram className="social-icon" />
-            <FaFacebook className="social-icon" />
-          </div>
+          
+        </div>
+
+        {/* Cuarta columna: Hipervínculos de navegación */}
+        <div className="footer-column">
+          <h5>Navegación</h5>
+          <ul className="footer-nav">
+            <li><a href="/">INICIO</a></li>
+            <li><a href="/productos">PRODUCTOS</a></li>
+            <li><a href="/nosotros">NOSOTROS</a></li>
+            <li><a href="/galeria">GALERÍA</a></li>
+            <li><a href="/api">API</a></li>
+          </ul>
         </div>
       </div>
     </footer>
