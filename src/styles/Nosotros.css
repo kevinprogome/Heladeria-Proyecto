@@ -1,5 +1,9 @@
 .app-container {
-  background-color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(106, 13, 173, 0.3),
+    rgba(255, 102, 204, 0.4)
+  );
   color: #fa52a0;
   display: flex;
   flex-direction: column;
@@ -16,10 +20,9 @@
   margin-bottom: 20px;
 }
 
-.product-card-title{
+.product-card-title {
   font-family: "Poppins", sans-serif;
   color: black !important;
-
 }
 .logo-container {
   margin-top: -40px;
@@ -63,30 +66,30 @@
 
 @media (max-width: 768px) {
   .logo-container {
-      width: 150px;
-      height: 150px;
+    width: 150px;
+    height: 150px;
   }
 
   .mission-vision-container {
-      padding: 15px;
+    padding: 15px;
   }
 
   .subtitulos {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .letra-parrafo-1 {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .logo-container {
-      width: 100px;
-      height: 100px;
+    width: 100px;
+    height: 100px;
   }
 
   .mission-vision-container {
-      padding: 10px;
+    padding: 10px;
   }
 }

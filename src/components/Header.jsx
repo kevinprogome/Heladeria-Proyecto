@@ -26,10 +26,10 @@ const Header = () => {
       >
         <div className="orbit-wrapper">
           <div className="orbit-controls">
-            <button className="orbit-previous">
+            <button className="orbit-previous ">
               <span className="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
             </button>
-            <button className="orbit-next">
+            <button className="orbit-next ">
               <span className="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
             </button>
           </div>

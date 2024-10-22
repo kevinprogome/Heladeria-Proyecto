@@ -41,7 +41,6 @@
   border-color: #fa52a0;
 }
 .imagen-relevantes {
-  border-radius: 20px;
   border: 3px solid #fff;
 }
 .imagen-placeholder {
@@ -120,6 +119,23 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+}
+
+.orbit-next,
+.orbit-previous {
+  color: #ff6eb9 !important;
+  background-color: transparent;
+}
+.orbit-next:hover,
+.orbit-previous:hover {
+  color: #ff6eb9 !important;
+  cursor: pointer;
+  background-color: rgba(240, 240, 240, 0.6);
+}
+
+.orbit-next:focus,
+.orbit-previous:focus {
+  color: #ff6eb9 !important; /* Cambia el color del icono o flecha */
 }
 
 /* Estilos responsivos */
