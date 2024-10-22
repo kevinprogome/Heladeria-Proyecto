@@ -1,116 +1,142 @@
 /* Estilos generales para la sección de productos */
 .products-container {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    justify-content: center;
-  }
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+}
 
-  .grid-x {
-    margin-bottom: 1.5rem; /* Espacio entre filas en el contenedor de la cuadrícula */
-  }
-  
-  .cell {
-    margin-bottom: 1.5rem; /* Espacio entre tarjetas dentro de la cuadrícula */
-  }
-  
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Espaciado entre las tarjetas */
-    
-  }
-  
-  /* Estilos para las tarjetas de productos */
+.grid-x {
+  margin-bottom: 1.5rem; /* Espacio entre filas en el contenedor de la cuadrícula */
+}
+
+.cell {
+  margin-bottom: 1.5rem; /* Espacio entre tarjetas dentro de la cuadrícula */
+}
+
+.product-card {
+  position: relative;
+  flex: 1 1 300px; /* Las tarjetas crecen para llenar el espacio, con un ancho mínimo de 300px */
+  max-width: 30%; /* Límite máximo del 30% del contenedor */
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow: hidden; /* Asegura que el pseudo-elemento no sobresalga */
+  transition: all 0.3s ease; /* Para animar la transición de hover */
+  box-sizing: border-box; /* Para incluir padding y border en el ancho total */
+}
+
+
+.product-card-thumbnail,
+.prueba-card-title,
+.prueba-card-desc,
+.prueba-card-price {
+  position: relative;
+  z-index: 2;
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%; /* Esto cubre el 30% superior de la tarjeta */
+  background-color: #ff6eb9; /* Cambia este color por el que prefieras */
+  z-index: 1; /* Asegura que el pseudo-elemento esté por detrás del contenido */
+  transition: background-color 0.3s ease; /* Transición suave del color */
+
+}
+
+.product-card-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-card-thumbnail img {
+  width: 180px; 
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+.prueba-card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  transition: all 0.4s;
+  text-align: center;
+  justify-content: center;
+}
+
+.product-card:hover::before {
+  background-color: #a180e1;
+}
+
+
+.prueba-card-title:hover {
+  color: #b880ff;
+}
+
+.prueba-card-desc {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.prueba-card-price {
+  display: flex; /* O display: block */
+  justify-content: center; /* Para centrar el texto */
+  align-items: center; /* Para centrar verticalmente si es necesario */
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+}
+
+.productos-grande {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff6eb9;
+}
+.prueba-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
   .product-card {
-    background-color: #fefefe;
-    border: 1px solid #e6e6e6;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 30%;
+    width: 45%; /* Mostrar dos tarjetas por fila en pantallas medianas */
   }
-  
-  .product-card-thumbnail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .product-card-thumbnail img {
-    max-width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-  }
-  
-  .product-card-title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1.45rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    color: #80cee1;
-    transition: all 0.4s;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .product-card-title:hover {
-    color: #b880ff;
-  }
-  
-  .product-card-desc {
-    color: #8a8a8a;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
-  }
-  
-  .product-card-price {
-    color: #3e3e3e;
-    display: inline-block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-top: 0.8rem;
-  }
+}
 
-  .titulo-grande {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-bottom: 20px;
-    text-align: center;
+@media (max-width: 768px) {
+  .product-card {
+    width: 45%; /* Mantener dos tarjetas horizontales en pantallas pequeñas */
   }
-  .product-card-sale {
-    color: #cacaca;
-    display: inline-block;
-    font-size: 0.85rem;
-    margin-left: 0.3rem;
-    text-decoration: line-through;
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 45%; /* Dos tarjetas por fila en pantallas muy pequeñas */
   }
-  
-  /* Estilos responsivos */
-  @media (max-width: 1024px) {
-    .product-card {
-      width: 45%; /* Mostrar dos tarjetas por fila en pantallas medianas */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .product-card {
-      width: 45%; /* Mantener dos tarjetas horizontales en pantallas pequeñas */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .product-card {
-      width: 45%; /* Dos tarjetas por fila en pantallas muy pequeñas */
-    }
-  }
-  
+}
