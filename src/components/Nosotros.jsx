@@ -3,7 +3,7 @@ import "foundation-sites/dist/js/foundation.min.js";
 import "../styles/Nosotros.css";
 import $ from "jquery";
 import { useEffect } from "react";
-import Logo from "../img/icono.png"
+import Logo from "../img/heladeria.png"
 
 const Nosotros = () => {
     useEffect(() => {
@@ -23,11 +23,11 @@ const Nosotros = () => {
             <div className="mission-vision-container">
                 <h2 className="subtitulos">Misión</h2>
                 <p className="letra-parrafo-1">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    Ofrecer a nuestros clientes una experiencia única a través de helados artesanales elaborados con ingredientes frescos y naturales, inspirados en la rica biodiversidad y la cultura colombiana. Nos comprometemos a brindar un servicio excepcional y a crear momentos de alegría en cada visita.
                 </p>
                 <h2 className="subtitulos">Visión</h2>
                 <p className="letra-parrafo-1">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    Ser la heladería preferida en Colombia, reconocida por la calidad y la innovación de nuestros productos, contribuyendo al desarrollo sostenible de la comunidad y promoviendo el consumo responsable. Aspiramos a expandir nuestra presencia a nivel nacional, compartiendo el sabor y la diversidad de nuestros helados con cada rincón del país
                 </p>
             </div>
         </div>
