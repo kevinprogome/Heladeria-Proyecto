@@ -12,6 +12,8 @@
     #fa52a0 0%,
     #ff96c8 100%
   ); /* Degradado suave */
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent; /* Relleno del texto con el degradado */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Sombra sutil para darle profundidad */
   margin-top: 20px; /* Espaciado superior para dar aire al título */
