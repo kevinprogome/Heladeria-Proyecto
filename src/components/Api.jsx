@@ -22,6 +22,27 @@ const Api = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
+        <button
+          className="contact-button"
+          onClick={() => (window.location.href = "tel:+123456789")}
+        >
+          Llamar ahora
+        </button>
+        <div className="additional-info">
+          <h2>Información Adicional</h2>
+          <p>
+            <strong>Punto de referencia:</strong> Estamos ubicados cerca de la
+            Universidad Surcolombiana.
+          </p>
+          <p>
+            <strong>Estacionamiento:</strong> Hay estacionamiento disponible en
+            las calles circundantes.
+          </p>
+          <p>
+            <strong>Transporte público:</strong> Fácil acceso a través de varias
+            líneas de autobuses.
+          </p>
+        </div>
       </div>
     </div>
   );
