@@ -9,6 +9,7 @@ import Relevantes from "./components/Relevantes.jsx";
 import Productos from "./components/Productos.jsx";
 import Nosotros from "./components/Nosotros.jsx";
 import Api from "./components/Api.jsx";
+import Comprar from "./components/Comprar.jsx";
 import LoadingScreen from "./components/LoadingScreen.jsx"; // Importar la pantalla de carga
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/productos" element={<Productos />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/api" element={<Api />} />
+          <Route path="/comprar" element={<Comprar />} />
         </Routes>
         <Footer />
       </BrowserRouter>
