@@ -9,8 +9,13 @@ import Fresa from "../img/helado_fresa.jpeg";
 import Menta from "../img/helado_menta.jpeg";
 import Caramelo from "../img/helado_caramelo.jpeg";
 import Cafe from "../img/helado_cafe.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const Productos = () => {
+  const navigate = useNavigate();
+  const handleBuy = (id) => {
+    navigate(`/comprar/${id}`);
+  };
   useEffect(() => {
     window.jQuery = $;
     window.$ = $;
@@ -39,6 +44,9 @@ const Productos = () => {
             Helado cremoso de vainilla, perfecto para quienes disfrutan de los
             sabores tradicionales.
           </div>
+          <button onClick={() => handleBuy(1)} className="btn-comprar">
+            Comprar
+          </button>
           <div className="prueba-card-price">$6.500</div>
         </div>
         <div className="cell product-card">
@@ -57,6 +65,9 @@ const Productos = () => {
             sabor profundo y decadente.
           </div>
           <div className="prueba-card-price">$7.000</div>
+          <button onClick={() => handleBuy(2)} className="btn-comprar">
+            Comprar
+          </button>
         </div>
         <div className="cell product-card">
           <div className="product-card-thumbnail">
@@ -73,6 +84,9 @@ const Productos = () => {
             Helado refrescante hecho con fresas frescas, ideal para los amantes
             de los sabores frutales y naturales.
           </div>
+          <button onClick={() => handleBuy(3)} className="btn-comprar">
+            Comprar
+          </button>
           <div className="prueba-card-price">$6.800</div>
         </div>
         <div className="cell product-card">
@@ -90,6 +104,9 @@ const Productos = () => {
             Helado de menta fresca con trozos de chocolate crujiente, una
             combinación clásica y refrescante.
           </div>
+          <button onClick={() => handleBuy(4)} className="btn-comprar">
+            Comprar
+          </button>
           <div className="prueba-card-price">$7.200</div>
         </div>
         <div className="cell product-card">
@@ -107,6 +124,9 @@ const Productos = () => {
             Helado cremoso con un toque de caramelo salado, que combina lo dulce
             y lo salado en cada bocado.
           </div>
+          <button onClick={() => handleBuy(5)} className="btn-comprar">
+            Comprar
+          </button>
           <div className="prueba-card-price">$7.500</div>
         </div>
         <div className="cell product-card">
@@ -124,6 +144,9 @@ const Productos = () => {
             Helado con un sabor intenso a café, perfecto para los amantes del
             café que buscan un postre energético.
           </div>
+          <button onClick={() => handleBuy(6)} className="btn-comprar">
+            Comprar
+          </button>
           <div className="prueba-card-price">$7.000</div>
         </div>
       </div>

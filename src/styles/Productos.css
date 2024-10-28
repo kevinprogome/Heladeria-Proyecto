@@ -134,6 +134,17 @@
   text-decoration: line-through;
 }
 
+.btn-comprar {
+  background-color: #a180e1; /* Verde padrão */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: 0 auto;
+}
 /* Estilos responsivos */
 @media (max-width: 1024px) {
   .product-card {

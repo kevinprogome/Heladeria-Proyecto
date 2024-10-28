@@ -47,7 +47,7 @@ function App() {
           <Route path="/productos" element={<Productos />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/api" element={<Api />} />
-          <Route path="/comprar" element={<Comprar />} />
+          <Route path="/comprar/:id" element={<Comprar />} />
         </Routes>
         <Footer />
       </BrowserRouter>
