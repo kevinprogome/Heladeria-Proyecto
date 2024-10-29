@@ -170,12 +170,23 @@ input[type="number"]:focus {
   color: #fefefe;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
 }
 
 .button:hover {
-  background-color: #ff96c8;
+  background-color: #a180e1;
 }
 
+.button:active {
+  background-color: #fa52a0;
+  transform: scale(
+    0.9
+  ); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+}
+.button:focus {
+  background-color: #fa52a0;
+}
 .button.large {
   font-size: 1.25rem;
 }

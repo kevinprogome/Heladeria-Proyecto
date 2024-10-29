@@ -12,6 +12,7 @@ const Comprar = () => {
 
   useEffect(() => {
     $(document).foundation();
+    window.scrollTo(0, 0);
   }, []);
 
   if (!product) return <div>Producto no encontrado</div>;

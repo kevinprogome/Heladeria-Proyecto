@@ -10,7 +10,8 @@ import Productos from "./components/Productos.jsx";
 import Nosotros from "./components/Nosotros.jsx";
 import Api from "./components/Api.jsx";
 import Comprar from "./components/Comprar.jsx";
-import LoadingScreen from "./components/LoadingScreen.jsx"; // Importar la pantalla de carga
+import LoadingScreen from "./components/LoadingScreen.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Estado para la pantalla de carga
@@ -48,6 +49,7 @@ function App() {
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/api" element={<Api />} />
           <Route path="/comprar/:id" element={<Comprar />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
