@@ -111,7 +111,7 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  font-size: 4.5vw; /* Tamaño dinámico basado en el ancho de la pantalla */
+  font-size: 70px; /* Tamaño dinámico basado en el ancho de la pantalla */
   letter-spacing: 1.5px; /* Espaciado elegante entre letras */
   text-transform: uppercase; /* Todo el texto en mayúsculas para un estilo más formal */
   -webkit-text-stroke: 2px #fff; /* Borde fino del texto para dar un toque moderno */
@@ -155,6 +155,9 @@
 @media (max-width: 768px) {
   .product-card {
     width: 45%; /* Mantener dos tarjetas horizontales en pantallas pequeñas */
+  }
+  .productos-grande {
+    font-size: 50px; /* Reducir el tamaño del título en pantallas pequeñas */
   }
 }
 
