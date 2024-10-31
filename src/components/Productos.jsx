@@ -31,8 +31,8 @@ const Productos = () => {
       <div className="grid-x grid-margin-x small-up-2 medium-up-3">
         <div className="cell product-card">
           <div className="product-card-thumbnail">
-            <a href="#">
-              <img
+          <a href="#" onClick={(e) => { e.preventDefault(); handleBuy(1); }}>
+          <img
                 className="imagen-productos"
                 src={Vainilla}
                 alt="Vainilla Clásica"
@@ -44,14 +44,15 @@ const Productos = () => {
             Helado cremoso de vainilla, perfecto para quienes disfrutan de los
             sabores tradicionales.
           </div>
+
+          <div className="prueba-card-price">$6.500</div>
           <button onClick={() => handleBuy(1)} className="btn-comprar">
             Comprar
           </button>
-          <div className="prueba-card-price">$6.500</div>
         </div>
         <div className="cell product-card">
           <div className="product-card-thumbnail">
-            <a href="#">
+          <a href="#" onClick={(e) => { e.preventDefault(); handleBuy(2); }}>
               <img
                 className="imagen-productos"
                 src={Chocolate}
@@ -71,8 +72,8 @@ const Productos = () => {
         </div>
         <div className="cell product-card">
           <div className="product-card-thumbnail">
-            <a href="#">
-              <img
+          <a href="#" onClick={(e) => { e.preventDefault(); handleBuy(3); }}>
+          <img
                 className="imagen-productos"
                 src={Fresa}
                 alt="Fresa Natural"
@@ -84,15 +85,15 @@ const Productos = () => {
             Helado refrescante hecho con fresas frescas, ideal para los amantes
             de los sabores frutales y naturales.
           </div>
+          <div className="prueba-card-price">$6.800</div>
           <button onClick={() => handleBuy(3)} className="btn-comprar">
             Comprar
           </button>
-          <div className="prueba-card-price">$6.800</div>
         </div>
         <div className="cell product-card">
           <div className="product-card-thumbnail">
-            <a href="#">
-              <img
+          <a href="#" onClick={(e) => { e.preventDefault(); handleBuy(4); }}>
+          <img
                 className="imagen-productos"
                 src={Menta}
                 alt="Menta con Chips de Chocolate"
@@ -104,15 +105,15 @@ const Productos = () => {
             Helado de menta fresca con trozos de chocolate crujiente, una
             combinación clásica y refrescante.
           </div>
+          <div className="prueba-card-price">$7.200</div>
           <button onClick={() => handleBuy(4)} className="btn-comprar">
             Comprar
           </button>
-          <div className="prueba-card-price">$7.200</div>
         </div>
         <div className="cell product-card">
           <div className="product-card-thumbnail">
-            <a href="#">
-              <img
+          <a href="#" onClick={(e) => { e.preventDefault(); handleBuy(5); }}>
+          <img
                 className="imagen-productos"
                 src={Caramelo}
                 alt="Caramelo Salado"
@@ -124,15 +125,15 @@ const Productos = () => {
             Helado cremoso con un toque de caramelo salado, que combina lo dulce
             y lo salado en cada bocado.
           </div>
+          <div className="prueba-card-price">$7.500</div>
           <button onClick={() => handleBuy(5)} className="btn-comprar">
             Comprar
           </button>
-          <div className="prueba-card-price">$7.500</div>
         </div>
         <div className="cell product-card">
           <div className="product-card-thumbnail">
-            <a href="#">
-              <img
+          <a href="#" onClick={(e) => { e.preventDefault(); handleBuy(6); }}>
+          <img
                 className="imagen-productos"
                 src={Cafe}
                 alt="Café Espresso"
@@ -144,10 +145,11 @@ const Productos = () => {
             Helado con un sabor intenso a café, perfecto para los amantes del
             café que buscan un postre energético.
           </div>
+
+          <div className="prueba-card-price">$7.000</div>
           <button onClick={() => handleBuy(6)} className="btn-comprar">
             Comprar
           </button>
-          <div className="prueba-card-price">$7.000</div>
         </div>
       </div>
     </div>
