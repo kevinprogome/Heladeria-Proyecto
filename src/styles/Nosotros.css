@@ -1,10 +1,7 @@
 .app-container {
-  background: linear-gradient(
-    135deg,
-    rgba(106, 13, 173, 0.3),
-    rgba(255, 102, 204, 0.4)
+  background: #fff
   );
-  color: #fa52a0;
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +54,7 @@
 }
 
 .mission-vision-container {
-  background-color: #e5e7eb;
+  background-color: #fa52a0c2;
   border-radius: 8px;
   padding: 20px;
   max-width: 800px;

@@ -8,6 +8,7 @@ import Footer from "./components/Footer.jsx";
 import Relevantes from "./components/Relevantes.jsx";
 import Productos from "./components/Productos.jsx";
 import Nosotros from "./components/Nosotros.jsx";
+import Login from "./components/Login.jsx"
 import Api from "./components/Api.jsx";
 import LoadingScreen from "./components/LoadingScreen.jsx"; // Importar la pantalla de carga
 
@@ -46,6 +47,7 @@ function App() {
           <Route path="/productos" element={<Productos />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/api" element={<Api />} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
