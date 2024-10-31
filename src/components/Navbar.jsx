@@ -4,6 +4,7 @@ import "../styles/Navbar.css";
 import Logo from "../img/logo.png";
 import $ from "jquery";
 import { useEffect } from "react";
+import { FaUser } from "react-icons/fa";
 
 const Navbar = () => {
   useEffect(() => {
@@ -120,13 +121,18 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="link-12" href="#">
+              <a className="link-12" href="/galeria">
                 GALERIA
               </a>
             </li>
             <li>
               <a className="link-12" href="/api">
                 API
+              </a>
+            </li>
+            <li>
+              <a className="link-12" href="/login">
+                <FaUser />
               </a>
             </li>
           </ul>

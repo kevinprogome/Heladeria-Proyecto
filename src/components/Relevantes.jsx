@@ -22,7 +22,7 @@ const Relevantes = () => {
 
   return (
     <div className="relevantes-container">
-      <h1 className="titulo-grande">Relevantes</h1>
+      <h1 className="titulo-relevantes">Relevantes</h1>
       <div
         className="ecommerce-product-slider orbit"
         role="region"

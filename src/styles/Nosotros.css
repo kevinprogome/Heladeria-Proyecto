@@ -15,7 +15,7 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  font-size: 4.5vw; /* Tamaño dinámico basado en el ancho de la pantalla */
+  font-size: 70px; /* Tamaño dinámico basado en el ancho de la pantalla */
   letter-spacing: 1.5px; /* Espaciado elegante entre letras */
   text-transform: uppercase; /* Todo el texto en mayúsculas para un estilo más formal */
   -webkit-text-stroke: 2px #fff; /* Borde fino del texto para dar un toque moderno */
@@ -48,9 +48,10 @@
 }
 
 .logo-img {
-  width: 100%; /* Ajusta la imagen al ancho del contenedor */
-  height: 100%; /* Ajusta la imagen a la altura del contenedor */
+  width: 90%; /* Ajusta la imagen al ancho del contenedor */
+  height: 90%; /* Ajusta la imagen a la altura del contenedor */
   object-fit: cover; /* Mantiene la proporción de la imagen */
+  margin-top: 30px;
 }
 
 .mission-vision-container {
@@ -79,6 +80,9 @@
   .logo-container {
     width: 150px;
     height: 150px;
+  }
+  .titulo-grande {
+    font-size: 50px;
   }
 
   .mission-vision-container {
