@@ -7,7 +7,7 @@ import products from "../js/productos";
 import "../styles/Comprar.css";
 
 const Comprar = () => {
-  const { id } = useParams(); // Obtén el ID de la URL
+  const { id } = useParams();
   const product = products.find((p) => p.id === parseInt(id)); // Encuentra el producto por ID
 
   useEffect(() => {
