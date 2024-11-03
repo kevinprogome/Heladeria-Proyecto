@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import Logo from "../img/heladeria.png"
 
 
-const Nosotros = () => {
+const Login = () => {
   useEffect(() => {
     $(document).foundation();
   }, []);
@@ -34,4 +34,4 @@ const Nosotros = () => {
   );
 };
 
-export default Nosotros;
+export default Login;
