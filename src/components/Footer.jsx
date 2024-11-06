@@ -55,7 +55,7 @@ const Footer = () => {
 
         {/* Cuarta columna: Hipervínculos de navegación */}
         <div className="footer-column">
-          <h5>Navegación</h5>
+          <div className="footer-end-title"><h5>Navegación</h5></div>
           <ul className="footer-nav">
             <li><a href="/">INICIO</a></li>
             <li><a href="/productos">PRODUCTOS</a></li>
