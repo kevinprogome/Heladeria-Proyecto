@@ -1,83 +1,94 @@
-
-.sign-in-form {
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
-    background-color: #fafafa;
-    width: 800px;
-    height: 450px;
-    justify-content: center;
-    margin: 0 auto; /* Esto centra el cuadro horizontalmente */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor principal ocupe todo el alto de la ventana */
 }
 
-  
-  .sign-in-form h4 {
-    color: #fa52a0;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  
-  .sign-in-form label {
-    text-transform: uppercase;
-    color: #fa52a0;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  .sign-in-form input {
-    color: #000;
-  }
-  
-  .sign-in-form input:focus {
-    opacity: .8;
-  }
+.login-container {
+  flex: 1; /* Permite que el contenedor principal ocupe el espacio disponible */
+  display: flex;
+  justify-content: center; /* Centra el formulario horizontalmente */
+  align-items: center; /* Centra el formulario verticalmente */
+  padding: 20px; /* Espaciado alrededor del formulario */
+}
 
-  .logo-container-login {
-    margin-top: -40px;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Asegura que la imagen se recorte dentro del contenedor circular */
-    margin-bottom: 20px;
-  }
-  
-  .logo-img {
-    width: 100%; /* Ajusta la imagen al ancho del contenedor */
-    height: 100%; /* Ajusta la imagen a la altura del contenedor */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
-  }
-  
-  
-  .sign-in-form-username,
-  .sign-in-form-password {
-    border-radius: 30px;
-    border: none;
-    transition: all ease .4s;
-    margin-bottom: 3rem;
-    color: #fa52a0;
-    background-color: #ffffff99;
-  }
-  
-  .sign-in-form-button {
-    border-radius: 30px;
-    border: 1px solid #fff;
-    color: #fff;
-    background-color: #fa52a0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 100%;
-    padding: 1rem;
-    transition: all ease .4s;
-    margin-top: 1rem;
-  }
-  
-  .sign-in-form-button:hover {
-    background-color: #a180e1;
-    border-color: #a180e1;
-  }
-  
-  
+.sign-in-form {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+  width: 800px;
+  height: auto; /* Cambiado a auto para adaptarse a su contenido */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para el formulario */
+}
+
+.sign-in-form h4 {
+  color: #fa52a0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sign-in-form label {
+  text-transform: uppercase;
+  color: #fa52a0;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sign-in-form input {
+  color: #000;
+}
+
+.sign-in-form input:focus {
+  opacity: .8;
+}
+
+.logo-container-login {
+  margin-top: -100px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden; /* Asegura que la imagen se recorte dentro del contenedor circular */
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: 100%; /* Ajusta la imagen a la altura del contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.sign-in-form-username,
+.sign-in-form-password {
+  border-radius: 30px;
+  border: none;
+  transition: all ease .4s;
+  margin-bottom: 3rem;
+  color: #fa52a0;
+  background-color: #ffffff99;
+}
+
+.sign-in-form-button {
+  border-radius: 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #fa52a0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 1rem;
+  transition: all ease .4s;
+  margin-top: 1rem;
+}
+
+.sign-in-form-button:hover {
+  background-color: #a180e1;
+  border-color: #a180e1;
+}

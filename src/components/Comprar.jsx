@@ -5,6 +5,7 @@ import "foundation-sites/dist/css/foundation.min.css";
 import "foundation-sites/dist/js/foundation.min.js";
 import products from "../js/productos";
 import "../styles/Comprar.css";
+import NotFoundComprar from "../components/NotFoundComprar.jsx";
 
 const Comprar = () => {
   const { id } = useParams();
@@ -15,7 +16,7 @@ const Comprar = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  if (!product) return <div>Producto no encontrado</div>;
+  if (!product) return <NotFoundComprar/>;
 
   return (
     <div>
