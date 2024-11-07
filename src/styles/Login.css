@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Asegura que el contenedor principal ocupe todo el alto de la ventana */
@@ -104,6 +104,17 @@ body {
     width: 250px;
     height: 250px; /* Reduce el tamaño del contenedor del logo */
   }
+}
+
+.login-registrarse{
+  text-align: center;
+  font-size: 18px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.link{
+  font-size: 18px;
 }
 
 /* Para pantallas pequeñas (teléfonos móviles) */

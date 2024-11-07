@@ -1,13 +1,13 @@
 .app-container {
-  background: #fff
-  );
+  background-color: #fff;
   color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100vh;
-  padding: 20px;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .titulo-grande {
@@ -33,78 +33,97 @@
 
 .product-card-title {
   font-family: "Poppins", sans-serif;
-  color: black !important;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #000;
+  text-align: center;
+  margin-top: 15px;
 }
+
 .logo-container {
-  margin-top: -40px;
+  margin-top: -50px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Asegura que la imagen se recorte dentro del contenedor circular */
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 2px;
 }
 
 .logo-img {
-  width: 90%; /* Ajusta la imagen al ancho del contenedor */
-  height: 90%; /* Ajusta la imagen a la altura del contenedor */
-  object-fit: cover; /* Mantiene la proporción de la imagen */
-  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .mission-vision-container {
-  background-color: #fa52a0c2;
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 800px;
-  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 35px;
+  max-width: 900px;
+  width: 100%;
   text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .subtitulos {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  margin: 10px 0;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #333;
+  margin: 20px 0;
+  text-transform: capitalize;
 }
 
 .letra-parrafo-1 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  margin-bottom: 20px;
   text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-size: 1.15rem;
+  color: #444;
 }
 
 @media (max-width: 768px) {
-  .logo-container {
-    width: 150px;
-    height: 150px;
-  }
   .titulo-grande {
-    font-size: 50px;
+    font-size: 60px;
   }
-
+  .logo-container {
+    width: 200px;
+    height: 200px;
+  }
   .mission-vision-container {
-    padding: 15px;
+    padding: 30px;
   }
-
   .subtitulos {
     font-size: 1.5rem;
   }
-
   .letra-parrafo-1 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .logo-container {
-    width: 100px;
-    height: 100px;
+  .titulo-grande {
+    font-size: 50px;
   }
-
+  .logo-container {
+    width: 150px;
+    height: 150px;
+  }
   .mission-vision-container {
-    padding: 10px;
+    padding: 20px;
+  }
+  .subtitulos {
+    font-size: 1.3rem;
+  }
+  .letra-parrafo-1 {
+    font-size: 0.95rem;
   }
 }

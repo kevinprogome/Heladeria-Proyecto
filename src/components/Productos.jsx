@@ -42,7 +42,7 @@ const Productos = () => {
           <h2 className="prueba-card-title">Vainilla Clásica</h2>
           <div className="prueba-card-desc">
             Helado cremoso de vainilla, perfecto para quienes disfrutan de los
-            sabores tradicionales.
+            sabores tradicionales y de los bellos momentos.
           </div>
 
           <div className="prueba-card-price">$6.500</div>

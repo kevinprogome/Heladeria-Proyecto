@@ -27,8 +27,13 @@ const Login = () => {
           <label htmlFor="sign-in-form-password">Contraseña</label>
           <input type="password" className="sign-in-form-password" id="sign-in-form-password" />
           <button type="submit" className="sign-in-form-button">
-            Sign In
+            Ingresar
           </button>
+          <div className="login-registrarse">
+            Si no tiene una cuenta puedes resgistrarse   <a className="link" href="/registro">
+                aquí
+              </a>
+          </div>
         </div>
       </form>
     </div>
