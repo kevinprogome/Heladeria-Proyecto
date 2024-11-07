@@ -70,7 +70,7 @@
 }
 
 .product-card-price:hover {
-  background: #fa52a0; /* Fondo principal al pasar el ratón */
+  background: #a180e1; /* Fondo principal al pasar el ratón */
   color: #fff; /* Color del texto al pasar el ratón */
 }
 
