@@ -154,24 +154,41 @@
 .btn-comprar:hover {
   background-color: #a180e1;
 }
-/* Estilos responsivos */
-@media (max-width: 1024px) {
-  .product-card {
-    width: 45%; /* Mostrar dos tarjetas por fila en pantallas medianas */
-  }
-}
-
+/* Para pantallas medianas (tabletas y dispositivos similares) */
 @media (max-width: 768px) {
   .product-card {
-    width: 45%; /* Mantener dos tarjetas horizontales en pantallas pequeñas */
-  }
-  .productos-grande {
-    font-size: 50px; /* Reducir el tamaño del título en pantallas pequeñas */
+    max-width: 45%; /* Ajusta el ancho máximo para que quepan dos tarjetas en fila */
   }
 }
 
+/* Para pantallas pequeñas (teléfonos móviles) */
 @media (max-width: 480px) {
   .product-card {
-    width: 45%; /* Dos tarjetas por fila en pantallas muy pequeñas */
+    max-width: 100%; /* Las tarjetas ocuparán todo el ancho */
+    margin-bottom: 1rem; /* Espacio inferior entre tarjetas */
+  }
+
+  .product-card-thumbnail {
+    height: 150px; /* Reduce la altura de las imágenes */
+  }
+
+  .product-card-thumbnail img {
+    width: 130px;
+    height: 130px; /* Ajusta el tamaño de la imagen */
+  }
+
+  .prueba-card-title {
+    font-size: 1rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .prueba-card-desc {
+    font-size: 0.75rem; /* Ajusta el tamaño de la descripción */
+  }
+
+  .productos-grande{
+    font-weight: 300px;
+    font-size: 50px; /* Tamaño dinámico basado en el ancho de la pantalla */
   }
 }
+
+
