@@ -101,18 +101,30 @@
 
 .descripcion-compra {
   font-family: "Poppins", sans-serif;
-  color: #000;
-  font-weight: 300;
-  font-size: 20px;
+  color: #555;
+  font-weight: 400;
+  font-size: 18px;
   margin-bottom: 1rem;
-  line-height: 1.6;
+  line-height: 1.8;
+  background: #f8f9fa; /* Fondo ligero */
+  padding: 15px; /* Espaciado alrededor del texto */
+  border-left: 5px solid #fa52a0; /* Borde decorativo */
+  border-radius: 5px; /* Bordes redondeados */
 }
 
+/* Precio */
 .precio-comprar {
   font-family: "Poppins", sans-serif;
-  color: #000;
-  font-size: 1.25rem;
+  color: #fa52a0;
+  font-size: 1.75rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-left: 5px solid #fa52a0;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Formularios */
@@ -184,9 +196,11 @@ input[type="number"]:focus {
     0.9
   ); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
 }
+
 .button:focus {
   background-color: #fa52a0;
 }
+
 .button.large {
   font-size: 1.25rem;
 }

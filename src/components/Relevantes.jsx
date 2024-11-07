@@ -9,8 +9,13 @@ import Fresa from "../img/helado_fresa.jpeg";
 import Menta from "../img/helado_menta.jpeg";
 import Caramelo from "../img/helado_caramelo.jpeg";
 import Cafe from "../img/helado_cafe.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const Relevantes = () => {
+  const navigate = useNavigate();
+  const handleBuy = (id) => {
+    navigate(`/comprar/${id}`);
+  };
   useEffect(() => {
     window.jQuery = $;
     window.$ = $;
@@ -54,7 +59,9 @@ const Relevantes = () => {
                   Helado cremoso de vainilla con auténtica vaina de vainilla,
                   perfecto para quienes disfrutan de los sabores.
                 </span>
-                <span className="product-card-price">$6.500</span>
+                <a href="" onClick={() => handleBuy(1)}>
+                  <span className="product-card-price">$6.500</span>
+                </a>
               </div>
 
               {/* Carta 2 */}
@@ -71,7 +78,9 @@ const Relevantes = () => {
                   Helado de chocolate intenso y rico, hecho con cacao oscuro
                   para un sabor profundo y decadente.
                 </span>
-                <span className="product-card-price">$6.500</span>
+                <a href="" onClick={() => handleBuy(2)}>
+                  <span className="product-card-price">$6.500</span>
+                </a>
               </div>
 
               {/* Carta 3 */}
@@ -88,7 +97,9 @@ const Relevantes = () => {
                   Helado refrescante hecho con fresas frescas, ideal para los
                   amantes de los sabores frutales y naturales.
                 </span>
-                <span className="product-card-price">$6.500</span>
+                <a href="" onClick={() => handleBuy(3)}>
+                  <span className="product-card-price">$6.500</span>
+                </a>
               </div>
             </div>
           </li>
@@ -112,7 +123,9 @@ const Relevantes = () => {
                   Helado de menta fresca con trozos de chocolate crujiente, una
                   combinación clásica y refrescante.
                 </span>
-                <span className="product-card-price">$8.500</span>
+                <a href="" onClick={() => handleBuy(4)}>
+                  <span className="product-card-price">$8.500</span>
+                </a>
               </div>
 
               {/* Carta 5 */}
@@ -129,7 +142,14 @@ const Relevantes = () => {
                   Helado cremoso con un toque de caramelo salado, que combina lo
                   dulce y lo salado en cada bocado.
                 </span>
-                <span className="product-card-price">$8.500</span>
+                <a href="">
+                  <span
+                    onClick={() => handleBuy(5)}
+                    className="product-card-price"
+                  >
+                    $8.500
+                  </span>
+                </a>
               </div>
 
               {/* Carta 6 */}
@@ -146,7 +166,9 @@ const Relevantes = () => {
                   Helado con un sabor intenso a café, perfecto para los amantes
                   del café que buscan un postre energético.
                 </span>
-                <span className="product-card-price">$8.500</span>
+                <a href="" onClick={() => handleBuy(6)}>
+                  <span className="product-card-price">$8.500</span>
+                </a>
               </div>
             </div>
           </li>
