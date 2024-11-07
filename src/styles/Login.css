@@ -92,3 +92,44 @@ body {
   background-color: #a180e1;
   border-color: #a180e1;
 }
+
+/* Para pantallas medianas (tabletas y dispositivos similares) */
+@media (max-width: 768px) {
+  .sign-in-form {
+    width: 600px; /* Reduce el ancho del formulario */
+    padding: 1rem; /* Ajusta el relleno para optimizar el espacio */
+  }
+
+  .logo-container-login {
+    width: 250px;
+    height: 250px; /* Reduce el tamaño del contenedor del logo */
+  }
+}
+
+/* Para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+  .sign-in-form {
+    width: 325px; /* La forma ocupa casi todo el ancho de la pantalla */
+    padding: 1rem 1rem; /* Reduce el padding para un mejor ajuste */
+  }
+
+  .sign-in-form h4 {
+    font-size: 1.2rem; /* Reduce el tamaño de la fuente del título */
+    margin-bottom: 0.5rem; /* Reduce el margen inferior */
+  }
+
+  .logo-container-login {
+    width: 200px;
+    height: 200px; /* Reduce más el tamaño del contenedor del logo */
+  }
+
+  .sign-in-form-username,
+  .sign-in-form-password {
+    margin-bottom: 2rem; /* Reduce el margen entre campos */
+  }
+
+  .sign-in-form-button {
+    padding: 0.75rem; /* Ajusta el tamaño del botón */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+  }
+}
