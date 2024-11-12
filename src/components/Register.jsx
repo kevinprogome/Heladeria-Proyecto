@@ -1,6 +1,6 @@
 import "foundation-sites/dist/css/foundation.min.css";
 import "foundation-sites/dist/js/foundation.min.js";
-import "../styles/Register.css";
+import "../styles/Login.css";
 import $ from "jquery";
 import { useEffect, useState } from "react";
 import Logo from "../img/heladeria.png";
@@ -57,73 +57,68 @@ const Register = () => {
 
   return (
     <div className="login-container">
-      <form onSubmit={handleSubmit}>
-        <div className="sign-in-form">
-          <h4 className="text-center">Registro</h4>
-          <div className="logo-container-login">
-            <img
-              src={Logo}
-              alt="Logo Heladería"
-              className="logo-img"
-            />
-          </div>
-          <label htmlFor="register-form-username">Usuario</label>
-          <input
-            type="text"
-            className="sign-in-form-input" // Usar una única clase para todos los campos
-            id="register-form-username"
-            name="username"
-            value={form.username}
-            onChange={handleInputChange}
-            required
+      <form onSubmit={handleSubmit} className="sign-in-form">
+        <h4 className="text-center">Registro</h4>
+        <div className="logo-container-login">
+          <img
+            src={Logo}
+            alt="Logo Heladería"
+            className="logo-img"
           />
-          {errors.username && <p className="error-message">{errors.username}</p>}
-
-          <label htmlFor="register-form-email">Correo</label>
-          <input
-            type="email"
-            className="sign-in-form-input" // Usar una única clase para todos los campos
-            id="register-form-email"
-            name="email"
-            value={form.email}
-            onChange={handleInputChange}
-            required
-          />
-          {errors.email && <p className="error-message">{errors.email}</p>}
-
-          <label htmlFor="register-form-password">Contraseña</label>
-          <input
-            type="password"
-            className="sign-in-form-input" // Usar una única clase para todos los campos
-            id="register-form-password"
-            name="password"
-            value={form.password}
-            onChange={handleInputChange}
-            required
-          />
-          {errors.password && <p className="error-message">{errors.password}</p>}
-
-          <label htmlFor="register-form-confirm-password">Escribe Nuevamente la Contraseña</label>
-          <input
-            type="password"
-            className="sign-in-form-input" // Usar una única clase para todos los campos
-            id="register-form-confirm-password"
-            name="confirmPassword"
-            value={form.confirmPassword}
-            onChange={handleInputChange}
-            required
-          />
-          {errors.confirmPassword && <p className="error-message">{errors.confirmPassword}</p>}
-
-          <button type="submit" className="sign-in-form-button">
-            Registrarse
-          </button>
-
-          <div className="login-registrarse">          <div className="login-registrarse">
-            ¿Ya tienes una cuenta? <a className="link" href="/login">Inicia sesión aquí</a>
-          </div>
         </div>
-        </div>
+        <label htmlFor="register-form-username">Usuario</label>
+        <input
+          type="text"
+          className="sign-in-form-username"
+          id="register-form-username"
+          name="username"
+          value={form.username}
+          onChange={handleInputChange}
+          required
+        />
+        {errors.username && <p className="error-message">{errors.username}</p>}
+
+        <label htmlFor="register-form-email">Correo</label>
+        <input
+          type="email"
+          className="sign-in-form-username"
+          id="register-form-email"
+          name="email"
+          value={form.email}
+          onChange={handleInputChange}
+          required
+        />
+        {errors.email && <p className="error-message">{errors.email}</p>}
+
+        <label htmlFor="register-form-password">Contraseña</label>
+        <input
+          type="password"
+          className="sign-in-form-password"
+          id="register-form-password"
+          name="password"
+          value={form.password}
+          onChange={handleInputChange}
+          required
+        />
+        {errors.password && <p className="error-message">{errors.password}</p>}
+
+        <label htmlFor="register-form-confirm-password">Confirmar Contraseña</label>
+        <input
+          type="password"
+          className="sign-in-form-password"
+          id="register-form-confirm-password"
+          name="confirmPassword"
+          value={form.confirmPassword}
+          onChange={handleInputChange}
+          required
+        />
+        {errors.confirmPassword && <p className="error-message">{errors.confirmPassword}</p>}
+
+        <button type="submit" className="sign-in-form-button">Registrarse</button>
+        <div className="login-registrarse">
+  ¿Ya tienes una cuenta? <a className="link" href="/login">Inicia sesión aquí</a>
+</div>
+
       </form>
     </div>
   );

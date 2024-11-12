@@ -117,6 +117,22 @@ body {
   font-size: 18px;
 }
 
+.login-registrarse {
+  color: #000; /* Color negro para el texto */
+  margin-top: 1rem; /* Espacio superior opcional */
+}
+
+.login-registrarse .link {
+  color: #fa52a0; /* Color rosado inicial para el enlace */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.login-registrarse .link:hover {
+  color: #a180e1; /* Color morado al pasar el cursor */
+}
+
+
 /* Para pantallas pequeñas (teléfonos móviles) */
 @media (max-width: 480px) {
   .sign-in-form {
