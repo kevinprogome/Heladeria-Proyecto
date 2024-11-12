@@ -6,90 +6,86 @@ import { useEffect } from "react";
 
 const Galeria = () => {
   useEffect(() => {
-    // Inicializa Foundation una vez que el DOM esté cargado
     $(document).foundation();
   }, []);
 
   return (
-    <div className="featured-image-block-grid">
-      <div className="featured-image-block-grid-header small-10 medium-8 large-7 columns text-center">
-        <h2>Galeria De Nuestros Productos</h2>
-        <p>Helados.</p>
-      </div>
-      <div className="row large-up-4 small-up-2">
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=899" />
-            <p className="text-center featured-image-block-title">New York</p>
-          </a>
-        </div>
+    <div className="gallery-container">
+  <div className="gallery-header small-10 medium-8 large-7 columns text-center">
+    <h2 className="gallery-title">Galería</h2>
+    <p>Disfruta de los diferentes sabores y colores que te ofrecemos</p>
+  </div>
+  
+  <div className="container-img">
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/Hg35pr1/4.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/3rwn5Nb/1.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/qWnMq3P/3.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/jJZyg2j/2.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/W6GWwRT/6.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/DVP1Yp2/11.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/hWmNRRZ/5.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/nkP7bsZ/7.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/C0QfCq3/10.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/ZWRNNpt/12.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/CWxT3vL/16.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/JKjHsxP/11.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+  <div className="box-img">
+    <figure>
+      <img src="https://i.ibb.co/8gF6d2M/14.jpg" alt="img-galeria" />
+    </figure>
+  </div>
+</div>
 
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=693" />
-            <p className="text-center featured-image-block-title">
-              San Francisco
-            </p>
-          </a>
-        </div>
+  </div>
 
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=452" />
-            <p className="text-center featured-image-block-title">Las Vegas</p>
-          </a>
-        </div>
-
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=792" />
-            <p className="text-center featured-image-block-title">Sacramento</p>
-          </a>
-        </div>
-
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=667" />
-            <p className="text-center featured-image-block-title">
-              Los Angeles
-            </p>
-          </a>
-        </div>
-
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=249" />
-            <p className="text-center featured-image-block-title">Chicago</p>
-          </a>
-        </div>
-
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=382" />
-            <p className="text-center featured-image-block-title">Boston</p>
-          </a>
-        </div>
-
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=1075" />
-            <p className="text-center featured-image-block-title">Seattle</p>
-          </a>
-        </div>
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=1075" />
-            <p className="text-center featured-image-block-title">Seattle</p>
-          </a>
-        </div>
-        <div className="featured-image-block column">
-          <a href="#">
-            <img src="https://unsplash.it/600/440?image=1075" />
-            <p className="text-center featured-image-block-title">Seattle</p>
-          </a>
-        </div>
-      </div>
-    </div>
   );
 };
 

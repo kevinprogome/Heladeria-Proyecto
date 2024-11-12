@@ -30,7 +30,7 @@ const Login = () => {
             Ingresar
           </button>
           <div className="login-registrarse">
-            Si no tiene una cuenta puedes resgistrarse   <a className="link" href="/registro">
+            Si no tiene una cuenta puedes resgistrarse   <a className="link" href="/register">
                 aquí
               </a>
           </div>

@@ -14,6 +14,7 @@ import Comprar from "./components/Comprar.jsx";
 import LoadingScreen from "./components/LoadingScreen.jsx";
 import NotFound from "./components/NotFound.jsx";
 import Galeria from "./components/Galeria.jsx";
+import Register from "./components/Register.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Estado para la pantalla de carga
@@ -52,6 +53,7 @@ function App() {
           <Route path="/api" element={<Api />} />
           <Route path="/comprar/:id" element={<Comprar />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/galeria" element={<Galeria />} />
         </Routes>
