@@ -15,17 +15,17 @@ body {
 }
 
 .sign-in-form {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   background-color: #fafafa;
-  width: 800px;
-  height: auto; /* Cambiado a auto para adaptarse a su contenido */
+  width: 400px; /* Reducido para ajustarse mejor a un tamaño de login normal */
+  height: auto; /* Adaptable al contenido */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para el formulario */
 }
 
 .sign-in-form h4 {
   color: #fa52a0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem; /* Reducido el margen inferior */
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -35,7 +35,7 @@ body {
   color: #fa52a0;
   letter-spacing: 1px;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem; /* Reducido el margen inferior */
 }
 
 .sign-in-form input {
@@ -47,22 +47,22 @@ body {
 }
 
 .logo-container-login {
-  margin-top: -100px;
+  margin-top: -60px; /* Ajustado para reducir el espacio entre el logo y el formulario */
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 200px; /* Tamaño más pequeño para el logo */
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  overflow: hidden; /* Asegura que la imagen se recorte dentro del contenedor circular */
-  margin-bottom: 20px;
+  overflow: hidden;
+  margin-bottom: 15px; /* Menos espacio debajo del logo */
 }
 
 .logo-img {
   width: 100%; /* Ajusta la imagen al ancho del contenedor */
   height: 100%; /* Ajusta la imagen a la altura del contenedor */
-  object-fit: cover; /* Mantiene la proporción de la imagen */
+  object-fit: cover;
 }
 
 .sign-in-form-username,
@@ -70,7 +70,7 @@ body {
   border-radius: 30px;
   border: none;
   transition: all ease .4s;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem; /* Reduce el espacio entre campos */
   color: #fa52a0;
   background-color: #ffffff99;
 }
@@ -83,7 +83,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   width: 100%;
-  padding: 1rem;
+  padding: 0.9rem; /* Ajusta el tamaño del botón */
   transition: all ease .4s;
   margin-top: 1rem;
 }
@@ -96,24 +96,24 @@ body {
 /* Para pantallas medianas (tabletas y dispositivos similares) */
 @media (max-width: 768px) {
   .sign-in-form {
-    width: 600px; /* Reduce el ancho del formulario */
+    width: 500px; /* Ajustado para pantallas medianas */
     padding: 1rem; /* Ajusta el relleno para optimizar el espacio */
   }
 
   .logo-container-login {
-    width: 250px;
-    height: 250px; /* Reduce el tamaño del contenedor del logo */
+    width: 180px;
+    height: 180px; /* Reduce el tamaño del contenedor del logo */
   }
 }
 
-.login-registrarse{
+.login-registrarse {
   text-align: center;
   font-size: 18px;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.link{
+.link {
   font-size: 18px;
 }
 
@@ -130,13 +130,13 @@ body {
   }
 
   .logo-container-login {
-    width: 200px;
-    height: 200px; /* Reduce más el tamaño del contenedor del logo */
+    width: 150px;
+    height: 150px; /* Reduce más el tamaño del contenedor del logo */
   }
 
   .sign-in-form-username,
   .sign-in-form-password {
-    margin-bottom: 2rem; /* Reduce el margen entre campos */
+    margin-bottom: 1rem; /* Reduce aún más el margen entre campos */
   }
 
   .sign-in-form-button {

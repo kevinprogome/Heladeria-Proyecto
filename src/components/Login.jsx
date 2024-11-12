@@ -14,7 +14,7 @@ const Login = () => {
     <div className="login-container">
       <form>
         <div className="sign-in-form">
-          <h4 className="text-center">Sign In</h4>
+          <h4 className="text-center">Iniciar sesion</h4>
           <div className="logo-container-login">
             <img 
               src={Logo} // Asegúrate de usar la ruta correcta a tu imagen
