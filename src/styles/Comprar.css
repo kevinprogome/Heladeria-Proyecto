@@ -146,8 +146,9 @@ label.middle {
 input[type="number"] {
   display: block;
   box-sizing: border-box;
-  width: 100%;
+  width: 24%;
   height: 2.4375rem;
+  text-align: center;
   padding: 0.5rem;
   border: 1px solid #cacaca;
   margin: 0 0 1rem;

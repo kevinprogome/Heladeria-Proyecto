@@ -58,16 +58,17 @@ const Comprar = () => {
           <div className="row">
             <div className="small-3 columns">
               <label htmlFor="middle-label" className="middle">
-                Cantidad
+                Cantidad: 
               </label>
             </div>
             <div className="small-9 columns">
               <input
                 type="number"
                 id="middle-label"
-                placeholder="Cantidad"
+                placeholder="Total"
                 min="1"
-                defaultValue="1"
+                defaultValue="0"
+                max="100"
               />
             </div>
           </div>
